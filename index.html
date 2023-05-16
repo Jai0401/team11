@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team11</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:400,700&display=swap" rel='stylesheet'>
+  <link rel="icon" href="favicon-2.ico" type="image/x-icon">
+ 
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="index.html"><img src="images/site-logo1.png" alt="logo" class="header__logo"></a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="index.html">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="fantasy-app/templates/predict.html">Fantasy Cricket</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="http://localhost:8000/">Series</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="scores.html">Scores</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="http://localhost:3000/">News</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-link" href="about-us.html">About</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="main__banner">
+      <div id="data-container"></div>
+      <video src="videos/anim1.mp4" autoplay poster="images/posterimage.jpg" class="main-vid" loop></video>
+    
+      <!-- Register now button -->
+      <div class="register-now">
+        <a href="http://localhost/sign-in/register.html" class="register-now__button">Register Now</a>
+      </div>
+
+      <div id="card1" class="card">
+        <img class="card-img" src="images/div1.jpg" alt="Image 1">
+        <div class="card-text">
+          <h1 class="div-head">Player Selection</h1>
+          <p>Allow users to select and create their own team of players from a pool of available players in a real-life cricket match. Highlight the ease of selecting players, the variety of players available, and
+            the ability to create a balanced team. </p>
+        </div>
+      </div>
+
+      <div id="card2" class="card">
+        <img class="card-img" src="images/div2.png" alt="Image 2">
+        <div class="card-text">
+          <h1 class="div-head">Leaderboard</h1>
+          <p>Showcase the leaderboard that displays the ranking of users based on their team's performance. Emphasize the competitiveness of the game and the ability to compare scores with other users.</p>
+        </div>
+      </div>
+
+      <div id="card3" class="card">
+        <img class="card-img" src="images/div3.png" alt="Image 3">
+        <div class="card-text">
+          <h1 class="div-head">Live Score Updates</h1>
+          <p>Provide live updates of the players' scores during a match, so users can track their team's performance in real-time. Showcase the user-friendly interface, the real-time updates, and the ability to
+            make quick decisions based on the player's performance. </p>
+        </div>
+      </div>
+
+      <div id="description-container">
+        <p class="main__description">Here you can <strong>create and join fantasy cricket leagues,</strong> track your team's performance, and stay up-to-date on the latest cricket news.</p>
+      </div>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">Copyright 2021 Team11 Cricket</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

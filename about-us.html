@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:400,700&display=swap" rel='stylesheet'>
+    <meta charset="utf-8">
+    <title>About-us</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img src="images/site-logo1.png" alt="logo" class="header__logo"></a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="index.html">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="fantasy-app/templates/predict.html">Fantasy Cricket</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="http://localhost:8000/">Series</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="scores.html">Scores</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="http://localhost:3000/">News</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="about-us.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="about-us">
+  <h2 class="about-us__title">About Us</h2>
+  <p class="about-us__description">Team11 Cricket is the ultimate destination for cricket enthusiasts. Our mission is to bring the passion and excitement of the sport to life, through our website. With a focus on fantasy cricket leagues and live scores, Team11 Cricket offers a unique and interactive experience for fans of all levels. Stay up-to-date on the latest cricket news and track your team's performance, all in one place.</p>
+  <p class="about-us__description">Join the community of cricket lovers and become a part of the action. Whether you're a casual fan or a seasoned player, Team11 Cricket is your one-stop-shop for everything cricket. Get started today and see for yourself why Team11 Cricket is the best way to experience the sport you love.</p>
+  <div class="about-us__container">
+    <img src="images/img1.png" alt="team image" class="about-us__img">
+    <div class="about-us__contact">
+      <h3 class="about-us__contact-title">Contact Us</h3>
+      <p class="about-us__contact-text">Got questions? We're here to help!</p>
+      <p class="about-us__contact-text">Email: team11cricket@gmail.com</p>
+      <p class="about-us__contact-text">Phone: +91 9974879674</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-us {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .about-us__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .about-us__description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .about-us__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us__img {
+    width: 50%;
+    height: auto;
+    margin-right: 50px;
+  }
+
+  .about-us__contact {
+    text-align: left;
+  }
+  .about-us{
+    padding:200px;
+  }
+
+  .about-us__contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .about-us__contact-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+  }
+  .header__logo {
+    height: 100px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+
+.header__nav-item:hover{
+  background-color: lightblue;
+}
+
+.header__nav-item {
+    padding-right: 20px;
+}
+
+.header__nav-link {
+    font-size: 23px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+  html, body, h2, p, a, ul, li {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+  }
+</style>
+  </body>
+</html>

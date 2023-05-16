@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:400,700&display=swap" rel='stylesheet'>
+
+    <title>Live Cricket Score</title>
+    <style>
+      /* Reset styles */
+      html, body, h1, h2, p, a, ul, li {
+          margin: 0;
+          padding: 0;
+          font-family: 'Open Sans', sans-serif;
+      }
+
+
+          /* Header styles */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+      }
+      .header__logo {
+    height: 100px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+
+.header__nav-item:hover{
+  background-color: lightblue;
+}
+
+.header__nav-item {
+    padding-right: 20px;
+}
+
+.header__nav-link {
+    font-size: 23px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+}
+
+main{
+    margin-top: 160px;
+}
+
+
+.widget-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-widget {
+  flex-basis: 60%;
+}
+
+.matchlist-widget {
+  flex-basis: 35%;
+}
+
+
+      /* Style your page as needed */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+
+      h1 {
+        margin: 0;
+      }
+      main {
+        padding: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin-top: 4.16%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img src="images/site-logo1.png" alt="logo" class="header__logo"></a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="index.html">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="fantasy-app/templates/predict.html">Fantasy Cricket</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="http://localhost:8000/">Series</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="scores.html">Scores</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="http://localhost:3000/">News</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="about-us.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <h1 style="text-align: center; margin-bottom: 40px;">Live Cricket Score</h1>
+      <!-- Embed the cricket score widget using the provided iframe -->
+      <iframe
+        src="https://widget.crictimes.org/"
+        style="width:100%;min-height: 450px;"
+        frameborder="0"
+        scrolling="yes"
+      ></iframe>
+
+     <!-- <div class="widget-container">
+        <div class="score-widget">
+          <script src="https://cdorgapi.b-cdn.net/widgets/score.js"></script>
+        </div>
+        <div class="matchlist-widget">
+          <script src="https://cdorgapi.b-cdn.net/widgets/matchlist.js"></script>
+        </div>
+      </div>-->
+
+    </main>
+    <footer>
+      <p>&copy;Copyright 2021 Team11 Cricket</p>
+    </footer>
+  </body>
+</html>

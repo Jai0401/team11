@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict the match</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+</head>
+<body>
+    <h1>Predict the match</h1>
+    <form method="post" action="{{ url_for('predict', match_id=match_id) }}">
+        <label>Who do you think will win?</label>
+        <select name="prediction">
+            <option value="Team A wins">Team A wins</option>
+            <option value="Team B wins">Team B wins</option>
+            <option value="Draw">Draw</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <a href="/Users/jaimingodhani/Desktop/Project Site/index.html">Home</a>
+</body>
+</html>
